@@ -19,7 +19,7 @@ app.use("/admin", adminRouter);
 app.use("/", userRouter);
 
 app.use((req, res) => {
-  res.status(404).end("<h2>404 not found</h2>");
+  res.status(404).end();
 });
 
 const startApp = async () => {
