@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "name": "ve3-assignment-backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CODE-Y02/ve3-assignment-backend.git"
+  },
+  "author": "yatharth lakhate (code-y02)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CODE-Y02/ve3-assignment-backend/issues"
+  },
+  "homepage": "https://github.com/CODE-Y02/ve3-assignment-backend#readme",
+  "description": ""
+}
