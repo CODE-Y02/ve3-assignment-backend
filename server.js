@@ -25,7 +25,7 @@ app.use((req, res) => {
 const startApp = async () => {
   try {
     const db = await mongoose.connect(
-      `mongodb+srv://${process.env.MongoUser}:${process.env.MongoPass}@${process.env.MongoCluster}.hxuor31.mongodb.net/${process.env.MongoDataBase}?retryWrites=true&w=majority`
+      `${process.env.MongoURI}?retryWrites=true&w=majority`
     );
 
     app.listen(process.env.serverPort || 3000, () => {
