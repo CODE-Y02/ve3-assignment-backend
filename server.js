@@ -24,9 +24,6 @@ app.use((req, res) => {
 
 const startApp = async () => {
   try {
-    console.log(
-      `mongodb+srv://${process.env.MongoUser}:${process.env.MongoPass}@${process.env.MongoCluster}.hxuor31.mongodb.net/${process.env.MongoDataBase}?retryWrites=true&w=majority`
-    );
     const db = await mongoose.connect(
       `mongodb+srv://${process.env.MongoUser}:${process.env.MongoPass}@${process.env.MongoCluster}.hxuor31.mongodb.net/${process.env.MongoDataBase}?retryWrites=true&w=majority`
     );
