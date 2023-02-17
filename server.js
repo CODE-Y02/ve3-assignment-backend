@@ -24,15 +24,13 @@ app.use((req, res) => {
 
 const startApp = async () => {
   try {
-    const db = await mongoose.connect(
+    await mongoose.connect(
       `${process.env.MongoURI}?retryWrites=true&w=majority`
     );
 
     app.listen(process.env.serverPort || 3000, () => {
       console.log("app running @ PORT ", process.env.serverPort || 3000);
     });
-
-    // console.log(db);
   } catch (error) {
     console.log(error);
   }

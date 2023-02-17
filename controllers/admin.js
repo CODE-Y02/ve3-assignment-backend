@@ -2,7 +2,6 @@ const Module = require("../models/module");
 
 exports.addNewModule = async (req, res) => {
   try {
-    // console.log(req);
     const { moduleData } = req.body;
 
     const module = await new Module({
@@ -14,7 +13,6 @@ exports.addNewModule = async (req, res) => {
       module,
     });
   } catch (error) {
-    console.log(error);
     res.status(500).json({
       success: false,
       error,
